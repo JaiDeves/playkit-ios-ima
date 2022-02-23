@@ -52,7 +52,8 @@ extension PKAdInfo {
             traffickingParams: ad.traffickingParameters,
             adIndexInPod: ad.adPodInfo.adPosition,
             podCount: podCount ?? 0,
-            adPodTimeOffset: ad.adPodInfo.timeOffset
+            adPodTimeOffset: ad.adPodInfo.timeOffset,
+            clickThroughUrl: (ad.value(forKey: "clickThroughUrl") as? String)
         )
     }
     
